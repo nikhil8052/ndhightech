@@ -1,0 +1,257 @@
+:root {
+    --orange-color: #FF3C00;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.header-div {
+    background-image: url('../images/dark1.png');
+    background-size: cover; /* This makes the image cover the entire div */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    height: 600px;
+}
+
+.header-div nav {
+    background: #050A1E !important;
+}
+
+.header-div h2 {
+    color: #FFFFFF !important;
+}
+
+nav * {
+    color: #FFFFFF !important;
+}
+
+.header-container {
+    margin-top: 110px;
+}
+
+.header-container * {
+    color: white !important;
+}
+
+.big-text {
+    font-size: 40px !important;
+}
+
+.header-persons {
+    width: 320px;
+}
+
+/* Second section css */
+
+#section2 .main-div {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.orange-text {
+    color: var(--orange-color) !important;
+}
+
+.section-3 {
+;
+}
+
+.card1 {
+    height: 300px;
+    padding: 35px;
+    box-sizing: border-box;
+    gap: 0px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 20px 56px 0px #0000001A;
+    margin-top: 50px;
+}
+
+.card1 img {
+    position: relative;
+    bottom: 63px;
+    left: 35%;
+}
+
+.card1 h6 {
+    margin-top: -15px;
+}
+
+.card1 .orange-line {
+    width: 50px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 10px;
+    border: 2px solid var(--orange-color);
+}
+
+.small-headling .d-flex.flex-row p:first-child {
+    width: 30px;
+    border: 1px solid var(--orange-color);
+    height: 1px;
+    margin-top: 11px;
+    margin-right: 7px;
+}
+
+.section-three {
+    background-image: url('../images/section3bg.png');
+    background-size: cover; /* This makes the image cover the entire div */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    height: 600px;
+}
+
+.section-three .header-container .row {
+    padding-top: 80px;
+}
+
+.footer {
+    background-size: cover; /* This makes the image cover the entire div */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    height: 250px;
+    background-color: #050A1E;
+    padding: 20px 0;
+    color: white !important;
+}
+
+#footer_section {
+    margin-bottom: 0px !important;
+    background-color: #050A1E !important;
+}
+
+.footer .footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer .footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer .container .row {
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .header-container {
+        margin-top: 90px;
+    }
+
+    .big-text {
+        font-size: 36px !important;
+    }
+
+    .header-persons {
+        width: 280px;
+    }
+
+    .section-three {
+        height: 500px;
+    }
+
+    .section-3 {
+        flex-direction: column !important;
+    }
+    .card1 img {
+        bottom: 70px !important;
+        left: 43% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-container {
+        margin-top: 70px;
+    }
+
+    .big-text {
+        font-size: 32px !important;
+        margin-top: 10px ;
+    }
+
+    .header-persons {
+        width: 300px;
+    }
+
+    .header-first-img{
+        width: 240px ;
+    }
+
+    .section-three {
+        height: 100%;
+        padding: 20px;
+    }
+
+    .card1 img {
+        bottom: 50px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        margin-top: 50px;
+    }
+
+    .big-text {
+        font-size: 28px !important;
+    }
+
+    .header-persons {
+        width: 255px;
+    }
+
+    .section-three {
+        height: 650px;
+    }
+
+    .card1 {
+        height: auto;
+    }
+
+    .card1 img {
+        bottom: 40px;
+        left: 25%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        margin-top: 30px;
+    }
+
+    .big-text {
+        font-size: 24px !important;
+    }
+    .header-persons {
+        width: 267px;
+        padding-left: 20px;
+
+    }
+
+    .section-three {
+        height: 660px;
+    }
+
+    .header-div h2, .top-head-text {
+        padding-left: 20px;
+        padding-right: 20px ;
+    }
+
+
+    .card1 {
+        height: auto;
+        padding: 20px;
+    }
+
+    .card1 img {
+        bottom: 30px;
+        left: 20%;
+    }
+
+    .footer {
+        height: auto;
+    }
+}
