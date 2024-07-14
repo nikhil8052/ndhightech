@@ -179,8 +179,28 @@ nav * {
     padding: 20px;
 }
 
-/* Responsive Design */
+.sec4{
+    margin-bottom: 20px ;
+    padding-left: 20px ;
+    padding-right: 20px ;
+}
 
+.section4-main-div .row .col-md-7:nth-child(1){
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+.section4-main-div .row .col-md-5:nth-child(2) img {
+
+    height: 500px ;
+    width: 500px ;
+}
+
+#section4{
+    margin-top: 40px !important ;
+}
+
+
+/* Responsive Design  Media Query start from Here */
 @media (max-width: 1200px) {
     .header-container {
         margin-top: 90px;
@@ -204,6 +224,10 @@ nav * {
     .card1 img {
         bottom: 70px !important;
         left: 43% !important;
+    }
+    .section4-main-div .row .col-md-5:nth-child(2) img {
+        height: 400px;
+        width: 400px;
     }
 }
 
@@ -234,6 +258,10 @@ nav * {
         bottom: 50px;
         left: 30%;
     }
+    .section4-main-div .row .col-md-5:nth-child(2) img {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -250,7 +278,7 @@ nav * {
     }
 
     .section-three {
-        height: 650px;
+        height: 700px;
     }
 
     .card1 {
@@ -292,9 +320,17 @@ nav * {
     }
 
     .section-three {
-        height: 800px;
+        height: 850px;
     }
 
+    .section-three .checks div{
+
+        margin-bottom: 8px;
+    }
+
+    .sec3-text h2{
+        margin-top: 25px;
+    }
     .header-div h2, .top-head-text {
         padding-left: 20px;
         padding-right: 20px ;
@@ -308,7 +344,7 @@ nav * {
 
     .card1 img {
         bottom: 52px !important;
-        left: 20%;
+        left: 38% !important;
     }
 
     .section-3 .card1:nth-child(3) img {
@@ -324,6 +360,10 @@ nav * {
 
     .section-3 .card1:nth-child(3) img {
         bottom: 38px !important;
+    }
+
+    #section4{
+        margin-top: 40px !important ;
     }
 
 
