@@ -86,29 +86,29 @@
                 <h2>We engage with a wide range of <span class="orange-text">Technologies</span></h2>
             </div>
             <div class="d-flex flex-row justify-content-between gap-2 section-3 mt-3 ">
-                <div class=" card1">
-                    <img src="./images/card11.png" alt="" srcset="">
+                <div class="card1 cd1">
+                    <img src="./images/cloud.png" wbname="cloud" alt="" srcset="">
                     <h6 class="text-center">Cloud Computing</h6>
                     <p class="orange-line"></p>
                     <small>Utilize cloud computing to harness scalable infrastructure, enabling businesses to expand
                         without traditional hardware limitations.</small>
                 </div>
-                <div class=" card1">
-                    <img src="./images/card12.png" alt="" srcset="">
+                <div class="card1 cd2">
+                    <img src="./images/book.png" wbname="book" alt="" srcset="">
                     <h6 class="text-center">Web Development</h6>
                     <p class="orange-line"></p>
                     <small>Create custom web applications tailored to meet specific business requirements, integrating
                         advanced functionalities and intuitive user interfaces.</small>
                 </div>
-                <div class=" card1">
-                    <img src="./images/card13.png" alt="" srcset="">
+                <div class="card1 cd3">
+                    <img src="./images/cap.png"  wbname="cap" alt="" srcset="">
                     <h6 class="text-center">Application Development</h6>
                     <p class="orange-line"></p>
                     <small>Develop native mobile applications for iOS and Android platforms, hybrid apps using
                         frameworks like Flutter or React Native, or cross-platform solutions with Xamarin.</small>
                 </div>
-                <div class=" card1">
-                    <img src="./images/card11.png" alt="" srcset="">
+                <div class="card1 cd4">
+                    <img src="./images/db.png"  wbname="db" alt="" srcset="">
                     <h6 class="text-center">Serve Management</h6>
                     <p class="orange-line"></p>
                     <small>Implement robust security measures, including firewalls, encryption, and intrusion detection
@@ -247,6 +247,24 @@
 
     // Call the function to append the timestamp
     appendTimestampToCSS();
+
+    // Logic to change to card image 
+    document.querySelectorAll('.card1').forEach(function(card) {
+        card.addEventListener('mouseleave', function() {
+            var image = this.querySelector('img');
+            var image_name = image.getAttribute('wbname');
+            image_name= `${image_name}.png`;
+            image.src = './images/' + image_name;
+        });
+
+        card.addEventListener('mouseover', function() {
+            var image = this.querySelector('img');
+            var image_name = image.getAttribute('wbname');
+            image_name= `${image_name}_white.png`;
+            image.src = './images/' + image_name;
+
+        });
+    });
 </script>
 
 

@@ -118,6 +118,14 @@ nav * {
     left: 35%;
 }
 
+.card1:hover img {
+    background: var(--orange-color);
+    border-radius: 20px;
+    padding: 5px ;
+}
+
+
+
 .section-3 .card1:nth-child(2) img {
   bottom: 73px;
 }
